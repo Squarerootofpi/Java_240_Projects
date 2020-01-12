@@ -43,8 +43,6 @@ public class ImageEditor
             int maxColorVal = scanner.nextInt();
             System.out.println("Max Color Value: " + maxColorVal);
             //Use this to do the massive input into a file.
-
-            int i;
 //            while (scanner.hasNextInt())
 //            {
 //                //System.out.println("loop");
@@ -53,20 +51,44 @@ public class ImageEditor
 //                System.out.println(i);
 //
 //            }
-            Image image = new Image(width,height,maxColorVal,scanner);
+            Image image = new Image(width,height,maxColorVal,scanner,magicNumber);
             System.out.println(image.toString());
-            //Testing to see if works lol... This is if file is not ints, but just lines.
-//            while (scanner.hasNext()) {
-//                String str = scanner.nextLine();
-//                System.out.println(str);
-//            }
 
-                //Read more: https://javarevisited.blogspot.com/2016/07/how-to-read-text-file-using-scanner-in-java-example-tutorial.html#ixzz6AmY6IG2D
+            System.out.println(args[0] + args[1] + args[2]);
+            //What the commandline arguments would be.
+            //java ImageEditor inputFileName outputFileName {grayscale|invert|emboss|motionblur
+            //blurLength}
+            switch (args[2]) {
+                case "invert":
+                    System.out.println("Inverting...");
+                    break;
+                case "grayscale":
+                    System.out.println("Grayscaling...");
+
+                    break;
+                case "emboss":
+                    System.out.println("Embossing...");
+
+
+                    break;
+                case "motionblur":
+                    System.out.println("Motionbluring...");
+                    System.out.println(args[3]);
+                    break;
+                default:
+                    System.out.println("Unknown command.... \n USAGE: java ImageEditor in-file out-file " +
+                            "(grayscale|invert|emboss|motionblur motion-blur-length)\n");
+                    break;
+            }
+            image.printFile(args[1]);
             System.out.println("End of ImageEditorMain");
         }
         catch (Exception ex) {
             System.out.println("ImageEditor failed, error: " + ex.toString());
+            System.out.println("USAGE: java ImageEditor in-file out-file " +
+            "(grayscale|invert|emboss|motionblur motion-blur-length)\n");
         }
+
 
 
     }

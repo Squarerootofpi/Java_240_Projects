@@ -30,4 +30,8 @@ public class Pixel {
                 ", blue=" + blue +
                 '}';
     }
+    public String toFileToString()
+    {
+        return red.toString() + " " + green.toString() + " " + blue.toString() + " ";
+    }
 }
