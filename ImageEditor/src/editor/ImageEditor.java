@@ -52,7 +52,7 @@ public class ImageEditor
 //
 //            }
             Image image = new Image(width,height,maxColorVal,scanner,magicNumber);
-            System.out.println(image.toString());
+            //System.out.println(image.toString());
 
             System.out.println(args[0] + args[1] + args[2]);
             //What the commandline arguments would be.
@@ -61,30 +61,41 @@ public class ImageEditor
             switch (args[2]) {
                 case "invert":
                     System.out.println("Inverting...");
+                    image.invert();
+                    image.printFile(args[1]);
                     break;
                 case "grayscale":
                     System.out.println("Grayscaling...");
-
+                    image.grayscale();
+                    image.printFile(args[1]);
                     break;
                 case "emboss":
                     System.out.println("Embossing...");
-
-
+                    image.emboss();
+                    image.printFile(args[1]);
                     break;
                 case "motionblur":
                     System.out.println("Motionbluring...");
                     System.out.println(args[3]);
+                    image.motionBlur(Integer.parseInt(args[3]));
+                    image.printFile(args[1]);
+                    break;
+                case "copy":
+                    System.out.println("Copying to new file...");
+                    image.printFile(args[1]);
                     break;
                 default:
                     System.out.println("Unknown command.... \n USAGE: java ImageEditor in-file out-file " +
                             "(grayscale|invert|emboss|motionblur motion-blur-length)\n");
                     break;
             }
-            image.printFile(args[1]);
+
             System.out.println("End of ImageEditorMain");
         }
         catch (Exception ex) {
             System.out.println("ImageEditor failed, error: " + ex.toString());
+            System.out.println("Stacktrace: ");
+            ex.printStackTrace();
             System.out.println("USAGE: java ImageEditor in-file out-file " +
             "(grayscale|invert|emboss|motionblur motion-blur-length)\n");
         }
