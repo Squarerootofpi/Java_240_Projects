@@ -35,6 +35,7 @@ public class TrieTest {
         }
     }
 
+
     @Test
     @DisplayName("Single Word Testing")
     public void testSingleWord(){
