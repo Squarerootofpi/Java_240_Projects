@@ -104,6 +104,7 @@ public class EvilHangman {
                     if (game.didWin())
                     {
                         System.out.println("You Win!");
+                        break;
                     }
                     else {
                         System.out.println("");
