@@ -18,11 +18,11 @@ public class EvilHangman {
          * @wordLength is an integer ≥ 2.
         * @guesses is an integer ≥ 1
         */
-        String mainClassName = args[1];
-        String dictionary = args[2];
+        //String mainClassName = args[1];
+        String dictionary = args[0];
         File dictionaryFile = new File(dictionary);
-        int wordLength = Integer.parseInt(args[3]);
-        int guesses = Integer.parseInt(args[4]);
+        int wordLength = Integer.parseInt(args[1]);
+        int guesses = Integer.parseInt(args[2]);
         String currentWord;
         //Make an evilhangman game instance
         EvilHangmanGame game = new EvilHangmanGame();
