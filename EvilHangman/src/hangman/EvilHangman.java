@@ -25,11 +25,13 @@ public class EvilHangman {
         //Do the start game function (loop functionality will be inside that!
         try {
             game.startGame(dictionaryFile,wordLength);
+            System.out.println("finished startgameTry");
         } catch (IOException e) {
             e.printStackTrace();
+
         } catch (EmptyDictionaryException e) {
             e.printStackTrace();
-            System.out.println("The dictionary does not contain words of that length. My condolences.");
+            System.out.println("The dictionary does not contain words of that length. My condolences, please run program with a different file.");
         }
 
     }
