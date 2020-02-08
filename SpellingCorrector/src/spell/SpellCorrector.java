@@ -124,7 +124,6 @@ public class SpellCorrector implements ISpellCorrector {
         hash_Set.addAll(genTranspositionSet(word));
         hash_Set.addAll(genInsertionSet(word));
 
-
         return hash_Set;
     }
     private Set<String> generate1Step(Set<String> words)

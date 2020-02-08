@@ -191,6 +191,7 @@ public class Trie implements ITrie {
                 {
                     return false;
                 }
+
             }
             else //One of them are null, and the other is not, so return false!!!
             {
