@@ -11,6 +11,9 @@ CREATE TABLE "events" (
 	"latitude"	NUMERIC NOT NULL,
 	"longitude"	NUMERIC NOT NULL,
 	"country"	TEXT NOT NULL,
+	"city"	TEXT NOT NULL,
+	"eventType"	TEXT NOT NULL,
+	"year"	INTEGER NOT NULL,
 	PRIMARY KEY("eventID")
 );
 CREATE TABLE "persons" (
