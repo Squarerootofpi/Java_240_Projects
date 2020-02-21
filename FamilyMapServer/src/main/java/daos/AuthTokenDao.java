@@ -61,7 +61,7 @@ public class AuthTokenDao implements IDao {
      * {@inheritDoc}
      */
     @Override
-    public void clear() {
+    public void clear() throws DataAccessException {
 
     }
 

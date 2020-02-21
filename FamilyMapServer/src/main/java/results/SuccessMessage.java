@@ -13,7 +13,7 @@ public class SuccessMessage extends Response {
      * Constructor for error only requires a message of what the error
      * actually is
      *
-     * @param message
+     * @param message The message of success describing it.
      */
     public SuccessMessage(String message) {
         this.message = message;

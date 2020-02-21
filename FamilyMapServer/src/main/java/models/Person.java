@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 /**
  * Database model of the Person Database Table
  */
@@ -41,10 +43,10 @@ public class Person {
      * Constructor of person object
      *
      * @param associatedUsername Name of the user account this person belongs to
-     * @param personID           Person’s unique ID
-     * @param firstName          Person’s first name
-     * @param lastName           Person’s last name
-     * @param gender             Person’s gender (“m” or “f”)
+     * @param personID Person’s unique ID
+     * @param firstName Person’s first name
+     * @param lastName Person’s last name
+     * @param gender Person’s gender (m or f)
      */
     public Person(String associatedUsername, String personID, String firstName, String lastName, Character gender) {
         this.associatedUsername = associatedUsername;
@@ -55,6 +57,26 @@ public class Person {
         this.fatherID = null;
         this.motherID = null;
         this.spouseID = null;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return associatedUsername.equals(person.associatedUsername) &&
+                personID.equals(person.personID) &&
+                firstName.equals(person.firstName) &&
+                lastName.equals(person.lastName) &&
+                gender.equals(person.gender) &&
+                Objects.equals(fatherID, person.fatherID) &&
+                Objects.equals(motherID, person.motherID) &&
+                Objects.equals(spouseID, person.spouseID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(associatedUsername, personID, firstName, lastName, gender, fatherID, motherID, spouseID);
     }
 
     public String getAssociatedUsername() {

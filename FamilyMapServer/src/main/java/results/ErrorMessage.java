@@ -13,7 +13,7 @@ public class ErrorMessage extends Response {
      * Constructor for error only requires a message of what the error
      * actually is
      *
-     * @param message
+     * @param message The message of error describing it.
      */
     public ErrorMessage(String message) {
         this.message = message;

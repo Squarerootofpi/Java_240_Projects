@@ -10,7 +10,7 @@ public interface IDao {
      * The clearALL method: clears all things within a table, and leaves
      * it empty.
      */
-    public void clear();
+    public void clear() throws DataAccessException;
 
     /**
      * The delete-row function, accepts an ID to do so.

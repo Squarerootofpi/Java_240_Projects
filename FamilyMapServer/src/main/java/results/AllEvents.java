@@ -7,6 +7,9 @@ import models.Event;
  * family members of the current user.
  */
 public class AllEvents extends Response {
+    /**
+     * An array of all the events of a person's tree
+     */
     private Event[] data;
 
     /**

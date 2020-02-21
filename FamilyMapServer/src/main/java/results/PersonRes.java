@@ -47,7 +47,7 @@ public class PersonRes extends Response {
      * @param personID           Person’s unique ID
      * @param firstName          Person’s first name
      * @param lastName           Person’s last name
-     * @param gender             Person’s gender (“m” or “f”)
+     * @param gender             Person’s gender (m or f)
      */
     public PersonRes(String associatedUsername, String personID, String firstName, String lastName, Character gender) {
         this.associatedUsername = associatedUsername;
