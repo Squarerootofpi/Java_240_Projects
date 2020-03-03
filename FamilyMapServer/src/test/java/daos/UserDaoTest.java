@@ -149,8 +149,6 @@ class UserDaoTest {
             UserDao uDao = new UserDao(conn);
             //if we call the method the first time it will insert it successfully
             uDao.create(aUser);
-            //but our sql table is set up so that "eventID" must be unique. So trying to insert it
-            //again will cause the method to throw an exception
             uDao.create(aUser);
             db.closeConnection(true);
         } catch (DataAccessException e) {
@@ -163,13 +161,13 @@ class UserDaoTest {
         assertFalse(didItWork);
         //Since we know our database encountered an error, both instances of insert should have been
         //rolled back. So for added security lets make one more quick check using our find function
-        //to make sure that our event is not in the database
+        //to make sure that our model is not in the database
         //Set our compareTest to an actual event
         User compareTest = aUser;
         try {
             Connection conn = db.openConnection();
             UserDao uDao = new UserDao(conn);
-            //and then get something back from our find. If the event is not in the database we
+            //and then get something back from our find. If the object is not in the database we
             //should have just changed our compareTest to a null object
             compareTest = uDao.read(compareTest.getUserName());
             db.closeConnection(true);
@@ -193,7 +191,6 @@ class UserDaoTest {
             uDao.create(bUser);
             db.closeConnection(true);
             System.out.println("conn closed");
-//
 //            //Reopen the connection
             uDao.setConn(db.openConnection());
             //Now make sure we can find them both, they will throw errors if not done right.

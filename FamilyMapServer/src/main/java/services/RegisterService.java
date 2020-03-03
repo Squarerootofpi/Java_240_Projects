@@ -1,5 +1,13 @@
 package services;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.UUID;
+
+import daos.DataAccessException;
+import daos.Database;
+import daos.UserDao;
+import models.User;
 import requests.Register;
 import results.Response;
 
@@ -14,6 +22,7 @@ import results.Response;
  */
 public class RegisterService {
 
+
     /**
      * Creates an SQL DB connection, and closes it within the function.
      *
@@ -21,6 +30,23 @@ public class RegisterService {
      * @return returns an error response object or an authToken Success object
      */
     public Response serve(Register register) {
+        Database db = new Database();
+        try {
+            //turn register request into query using the Daos.
+            User userToAdd = new User(register);
+            Connection conn = db.openConnection();
+            UserDao uD = new UserDao(conn);
+
+            db.closeConnection(true);
+        }
+        catch (DataAccessException ex)
+        {
+
+        }
+
+
+
+        String userID = UUID.randomUUID().toString();
         return null;
     }
 }

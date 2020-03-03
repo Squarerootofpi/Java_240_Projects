@@ -1,6 +1,9 @@
 package services;
 
+import daos.*;
+import results.ErrorMessage;
 import results.Response;
+import results.SuccessMessage;
 
 /**
  * Clear All Service.
@@ -18,7 +21,25 @@ public class ClearService {
      * @return returns an error response object or success response,
      * indicating if successfully cleared
      */
-    public Response serve() {
-        return null;
+    public Response serve() throws DataAccessException {
+        Database db = new Database();
+        try {
+            db.openConnection();
+            UserDao userDao = new UserDao(db.getConnection());
+            PersonDao personDao = new PersonDao(db.getConnection());
+            EventDao eventDao = new EventDao(db.getConnection());
+            AuthTokenDao authTokenDao = new AuthTokenDao(db.getConnection());
+            userDao.clear();
+            personDao.clear();
+            eventDao.clear();
+            authTokenDao.clear();
+
+            db.closeConnection(true);
+            return new SuccessMessage("Clear succeeded.");
+        }
+        catch (Exception ex) {
+            db.closeConnection(false);
+            return new ErrorMessage("Failed clearing tables");
+        }
     }
 }

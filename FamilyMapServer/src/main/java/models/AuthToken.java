@@ -1,5 +1,15 @@
 package models;
 
+
+/*
+Questions:
+How much time???
+How much
+
+ */
+
+import java.util.Objects;
+
 /**
  * Database model of the AuthToken Database Table
  */
@@ -53,5 +63,20 @@ public class AuthToken {
 
     public void setPersonID(String personID) {
         this.personID = personID;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AuthToken authToken1 = (AuthToken) o;
+        return authToken.equals(authToken1.authToken) &&
+                userName.equals(authToken1.userName) &&
+                personID.equals(authToken1.personID);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(authToken, userName, personID);
     }
 }

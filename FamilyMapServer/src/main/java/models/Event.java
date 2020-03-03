@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 /**
  * Database model of the Event Database Table
  */
@@ -136,5 +138,26 @@ public class Event {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Event event = (Event) o;
+        return associatedUsername.equals(event.associatedUsername) &&
+                eventID.equals(event.eventID) &&
+                personID.equals(event.personID) &&
+                latitude.equals(event.latitude) &&
+                longitude.equals(event.longitude) &&
+                country.equals(event.country) &&
+                city.equals(event.city) &&
+                eventType.equals(event.eventType) &&
+                year.equals(event.year);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(associatedUsername, eventID, personID, latitude, longitude, country, city, eventType, year);
     }
 }

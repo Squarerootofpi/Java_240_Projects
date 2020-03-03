@@ -1,17 +1,20 @@
 package models;
 
 
-import java.util.Objects;
+import requests.Register;
 
+import java.util.Objects;
+import java.util.UUID;
 /**
  * Database model of the User Database Table
  */
+
 public class User {
     /**
      * First name of user
      */
     private String firstName;
-    /**
+     /**
      * Last name of user
      */
     private String lastName;
@@ -114,6 +117,16 @@ public class User {
         this.personID = personID;
     }
 
+    public User(Register regReq) {
+        this.firstName = regReq.getFirstName();
+        this.lastName = regReq.getLastName();
+        this.userName = regReq.getUserName();
+        this.email = regReq.getEmail();
+        this.password = regReq.getPassword();
+        this.gender = regReq.getGender();
+        this.personID = UUID.randomUUID().toString();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -131,4 +144,5 @@ public class User {
     public int hashCode() {
         return Objects.hash(firstName, lastName, userName, email, password, gender);
     }
+
 }

@@ -84,6 +84,51 @@ public class PersonDao implements IDao {
     }
 
     /**
+     * Read all people NOT IMPLEMENTED COMPLETELY YET!!!
+     */
+    public Person[] readAll() throws DataAccessException {
+        Person person;
+        //Person[] people = new Person[];
+        ResultSet rs = null;
+        String sql = "SELECT * FROM persons;";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            rs = stmt.executeQuery();
+                /*
+                "associatedUsername"	TEXT NOT NULL,
+	"personID"	TEXT NOT NULL UNIQUE,
+	"firstName"	TEXT NOT NULL,
+	"lastName"	TEXT NOT NULL,
+	"gender"	TEXT NOT NULL,
+	"fatherID"	TEXT,
+	"motherID"	TEXT,
+	"spouseID"	TEXT,
+                 */
+            if (rs.next()) {
+                char genderChar = rs.getString("gender").charAt(0);
+                person = new Person(rs.getString("associatedUsername"), rs.getString("personID"),
+                        rs.getString("firstName"), rs.getString("lastName"), genderChar);
+                person.setFatherID(rs.getString("fatherID"));
+                person.setMotherID(rs.getString("motherID"));
+                person.setSpouseID(rs.getString("spouseID"));
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DataAccessException("Error encountered while finding event");
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+        return null;
+    }
+
+    /**
      * Person add-row function, accepts a model to do so.
      *
      * @param person the model for the Dao to attempt to create a row from
