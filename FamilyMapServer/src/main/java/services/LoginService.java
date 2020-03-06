@@ -1,7 +1,14 @@
 package services;
 
+import daos.*;
+import models.AuthToken;
+import models.Person;
+import models.User;
 import requests.Login;
 import results.*;
+
+import java.sql.Connection;
+import java.util.UUID;
 
 /**
  * Login Service.
@@ -20,7 +27,62 @@ public class LoginService {
      * @param login the login request object parsed by the handler
      * @return returns an error response object or authToken object.
      */
-    public Response serve(Login login) {
-        return null;
+    public Response serve(Login login) throws DataAccessException {
+        Database db = new Database();
+        try {
+            //turn register request into query using the Daos.
+            //User userToAdd = new User(register);
+            Connection conn = db.openConnection();
+            UserDao uD = new UserDao(conn);
+
+            //find if non-null and valid values
+            if (
+                    login == null  //if the whole object is null
+                            //if any of the values are null
+                            || login.getUserName() == null || login.getPassword() == null
+
+                            //parameters should not be empty as well.
+                            || login.getUserName().equals("") || login.getPassword().equals("")
+            ) {
+                return new ErrorMessage("Request property missing or has invalid value");
+            }
+
+            //make sure it is a username
+            User userRead = uD.read(login.getUserName());
+            if (userRead == null)
+            {
+                db.closeConnection(false);
+                return new ErrorMessage("Request property missing or has invalid value");
+            }
+            if (!userRead.getPassword().equals(login.getPassword()))
+            {
+                db.closeConnection(false);
+                return new ErrorMessage("Request property missing or has invalid value");
+            }
+
+            //It's fine to create it, so create user, and give authtoken
+            //uD.create(userToAdd);
+            //String userPersonID = userToAdd.getPersonID();
+
+            //Add them to the person table
+            //PersonDao personDao = new PersonDao(conn);
+            //Person newPerson = new Person(register, userPersonID);
+            //personDao.create(newPerson);
+
+            //add them to the authtoken table and give them that back.
+            AuthToken authToken = new AuthToken(UUID.randomUUID().toString(),userRead.getUserName(),userRead.getPersonID());
+            AuthTokenDao authTokenDao = new AuthTokenDao(conn);
+            authTokenDao.create(authToken);
+
+
+            db.closeConnection(true);
+            return new GoodLogin(authToken);
+        }
+        catch (DataAccessException ex)
+        {
+            db.closeConnection(false);
+            System.out.println(ex.toString());
+            return new ErrorMessage("Internal server error");
+        }
     }
 }

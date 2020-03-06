@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Random;
 
 import static org.junit.jupiter.api.BeforeAll.*;
 import static org.junit.jupiter.api.Test.*;
@@ -248,4 +249,49 @@ class PersonDaoTest {
     void deleteFail() {
 
     }
+
+    @Test
+    void deleteWhereAssociatedUsername() throws Exception {
+        //We want to make sure insert works
+        Person compareTest = null;
+        Person compareTest2 = null;
+        try {
+            //Let's get our connection and make a new DAO
+            Connection conn = db.openConnection();
+            PersonDao pDao = new PersonDao(conn);
+            //While insert returns a bool we can't use that to verify that our function actually worked
+            //only that it ran without causing an error
+            pDao.create(person);
+            pDao.create(nonNullPerson);
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            pDao.setConn(conn);
+            assertNotNull(pDao.read(person.getPersonID())); //making sure it inserted
+            assertNotNull(pDao.read(nonNullPerson.getPersonID())); //making sure it inserted
+            pDao.deleteWhereAssociatedUsername(person.getAssociatedUsername());
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            pDao.setConn(conn);
+            //System.out.println("output");
+            //So lets use a find method to get the event that we just put in back out
+            compareTest = pDao.read(person.getPersonID());
+            compareTest2 = pDao.read(nonNullPerson.getPersonID());
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        //First lets see if our find found anything at all. If it did then we know that if nothing
+        //else something was put into our database, since we cleared it in the beginning
+        assertNull(compareTest);
+        assertNotNull(compareTest2);
+        //Now lets make sure that what we put in is exactly the same as what we got out. If this
+        //passes then we know that our insert did put something in, and that it didn't change the
+        //data in any way
+        //assertNotEquals(person, compareTest);
+        assertEquals(nonNullPerson, compareTest2);
+    }
+
+
 }

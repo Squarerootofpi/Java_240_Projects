@@ -78,12 +78,12 @@ public class Server {
         server.createContext("/user/login", new LoginHandler());
         server.createContext("/user/register", new RegisterHandler());
         server.createContext("/fill", new FillHandler());
-        server.createContext("/person", new PersonHandler());
-        server.createContext("/event", new EventHandler());
+        server.createContext("/person/", new PersonHandler());
+        server.createContext("/event/", new EventHandler());
         //a specific person
-        server.createContext("/person/", new AllPeopleHandler());
+        server.createContext("/person", new AllPeopleHandler());
         //a specific event
-        server.createContext("/event/", new AllEventsHandler());
+        server.createContext("/event", new AllEventsHandler());
         //The Filehandler context
         server.createContext("/", new FileHandler());
 

@@ -157,6 +157,40 @@ public class EventDao implements IDao {
         return false;
     }
 
+    /**
+     *
+     * @param id the associatedUsername of the user to have events removed.
+     * @throws DataAccessException
+     */
+    public void deleteWhereAssociatedUsername(String id) throws DataAccessException {
+        Event event;
+        //ResultSet rs = null;
+        String sql = "DELETE FROM events WHERE associatedUsername = ?;";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, id);
+            stmt.execute();
+                /*
+                	"associatedUsername"	TEXT NOT NULL,
+                    "eventID"	TEXT NOT NULL UNIQUE,
+                    "personID"	TEXT NOT NULL,
+                    "latitude"	NUMERIC NOT NULL,
+                    "longitude"	NUMERIC NOT NULL,
+                    "country"	TEXT NOT NULL,
+                    "city"	TEXT NOT NULL,
+                    "eventType"	TEXT NOT NULL,
+                    "year"	INTEGER NOT NULL,
+                    PRIMARY KEY("eventID")
+                 */
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DataAccessException("Error encountered while finding event");
+        }
+        return;
+    }
+
+
+
     public Connection getConn() {
         return conn;
     }

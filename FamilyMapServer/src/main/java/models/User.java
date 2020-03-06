@@ -101,8 +101,8 @@ public class User {
      *
      * @param firstName User's first name
      * @param lastName  User's last name
-     * @param userName  User's desired username
-     * @param email     unique email address associated with user
+     * @param userName  User's desired username: primary key: unique
+     * @param email     email address associated with user, not necessarily unique.
      * @param password  User's password
      * @param gender    Gender of user ("m" or "f")
      * @param personID The generated person ID of the user's person on the family tree

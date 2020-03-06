@@ -1,8 +1,10 @@
 package daos;
 
+import models.Event;
 import models.Person;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * {@inheritDoc}
@@ -86,35 +88,30 @@ public class PersonDao implements IDao {
     /**
      * Read all people NOT IMPLEMENTED COMPLETELY YET!!!
      */
-    public Person[] readAll() throws DataAccessException {
-        Person person;
-        //Person[] people = new Person[];
+    public Person[] readAllWhereAssociatedUsername(String userName) throws DataAccessException {
+        Person person;// = new Person;
         ResultSet rs = null;
-        String sql = "SELECT * FROM persons;";
+        String sql = "SELECT * FROM persons WHERE associatedUsername = ?;";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, userName);
             rs = stmt.executeQuery();
-                /*
-                "associatedUsername"	TEXT NOT NULL,
-	"personID"	TEXT NOT NULL UNIQUE,
-	"firstName"	TEXT NOT NULL,
-	"lastName"	TEXT NOT NULL,
-	"gender"	TEXT NOT NULL,
-	"fatherID"	TEXT,
-	"motherID"	TEXT,
-	"spouseID"	TEXT,
-                 */
-            if (rs.next()) {
+
+            ArrayList<Person> people = new ArrayList<Person>();
+            //Person[] peeps = new Person[];
+            while (rs.next()) {
                 char genderChar = rs.getString("gender").charAt(0);
                 person = new Person(rs.getString("associatedUsername"), rs.getString("personID"),
                         rs.getString("firstName"), rs.getString("lastName"), genderChar);
                 person.setFatherID(rs.getString("fatherID"));
                 person.setMotherID(rs.getString("motherID"));
                 person.setSpouseID(rs.getString("spouseID"));
-
+                people.add(person);
             }
+
+            return people.toArray(new Person[people.size()]);
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new DataAccessException("Error encountered while finding event");
+            throw new DataAccessException("Error encountered while finding person");
         } finally {
             if (rs != null) {
                 try {
@@ -125,7 +122,6 @@ public class PersonDao implements IDao {
             }
 
         }
-        return null;
     }
 
     /**
@@ -197,5 +193,21 @@ public class PersonDao implements IDao {
 
     public void setConn(Connection conn) {
         this.conn = conn;
+    }
+
+    public void deleteWhereAssociatedUsername(String id) throws DataAccessException {
+        Person person;
+        //ResultSet rs = null;
+        String sql = "DELETE FROM persons WHERE associatedUsername = ?;";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, id);
+            stmt.execute();
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DataAccessException("Error encountered while finding event");
+        }
+        return;
     }
 }

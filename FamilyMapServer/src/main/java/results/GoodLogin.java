@@ -1,5 +1,7 @@
 package results;
 
+import models.AuthToken;
+
 /**
  * Response with an auth token for a login that us done successfully
  */
@@ -28,6 +30,18 @@ public class GoodLogin extends Response {
         this.authToken = authToken;
         this.userName = userName;
         this.personID = personID;
+        setSuccess(true);
+    }
+
+    /**
+     * constructor for putting in an authtoken
+     *
+     * @return
+     */
+    public GoodLogin(AuthToken auth) {
+        this.authToken = auth.getAuthToken();
+        this.userName = auth.getUserName();
+        this.personID = auth.getPersonID();
         setSuccess(true);
     }
 

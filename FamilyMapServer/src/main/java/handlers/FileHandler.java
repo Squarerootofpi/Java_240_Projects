@@ -18,7 +18,7 @@ public class FileHandler extends BaseHandler {
         String root = "./FoldersAndSources/FamilyMapServerStudent-master/web/";
         URI uri = exchange.getRequestURI();
         String path = uri.getPath();
-        System.out.println("looking for: "+ root + path);
+        System.out.println("looking for: " + root + path);
 
         if (path.equals("/") || path.equals(null)) {// = / or null, then send the index.html.
             path = "/index.html";
@@ -33,29 +33,29 @@ public class FileHandler extends BaseHandler {
             //exchange.sendResponseHeaders(404, response.length());
             //exchange.getResponseBody().close();
         }
-            // Object exists and is a file: accept with response code 200.
-            String mime = "text/html";
-            if(path.substring(path.length()-3).equals(".js")) mime = "application/javascript";
-            if(path.substring(path.length()-3).equals("css")) mime = "text/css";
+        // Object exists and is a file: accept with response code 200.
+        String mime = "text/html";
+        if (path.substring(path.length() - 3).equals(".js")) mime = "application/javascript";
+        if (path.substring(path.length() - 3).equals("css")) mime = "text/css";
 
 
-            Headers h = exchange.getResponseHeaders();
-            h.set("Content-Type", mime);
-            if (path.equals("HTML/404.html")) {
-                exchange.sendResponseHeaders(404, 0);
-            }
-            else {
-                exchange.sendResponseHeaders(200, 0);
-            }
+        Headers h = exchange.getResponseHeaders();
+        h.set("Content-Type", mime);
+        if (path.equals("HTML/404.html")) {
+            exchange.sendResponseHeaders(404,file.length());
 
-            OutputStream os = exchange.getResponseBody();
-            FileInputStream fs = new FileInputStream(file);
-            final byte[] buffer = new byte[0x10000];
-            int count = 0;
-            while ((count = fs.read(buffer)) >= 0)
-            {
-                os.write(buffer,0,count);
-                System.out.println(count);
+
+        } else {
+            exchange.sendResponseHeaders(200, 0);
+        }
+
+        OutputStream os = exchange.getResponseBody();
+        FileInputStream fs = new FileInputStream(file);
+        final byte[] buffer = new byte[0x10000];
+        int count = 0;
+        while ((count = fs.read(buffer)) >= 0) {
+            os.write(buffer, 0, count);
+            System.out.println(count);
             fs.close();
             os.close();
         }

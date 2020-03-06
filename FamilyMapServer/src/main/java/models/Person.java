@@ -1,6 +1,9 @@
 package models;
 
+import requests.Register;
+
 import java.util.Objects;
+import java.util.UUID;
 
 /**
  * Database model of the Person Database Table
@@ -74,7 +77,16 @@ public class Person {
                 Objects.equals(spouseID, person.spouseID);
     }
 
-
+    public Person(Register register, String userPersonID) {
+        this.associatedUsername = register.getUserName();
+        this.personID = userPersonID;
+        this.firstName = register.getFirstName();
+        this.lastName = register.getLastName();
+        this.gender = register.getGender();
+        this.fatherID = null;
+        this.motherID = null;
+        this.spouseID = null;
+    }
 
     @Override
     public int hashCode() {

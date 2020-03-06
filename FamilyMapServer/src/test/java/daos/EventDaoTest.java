@@ -27,13 +27,13 @@ class EventDaoTest {
 //        db.closeConnection(true);
         //and a new Person with random data
         ev1 = new Event("crap_username", "123_ID",
-                "123123", 1.2323f, 3434.4f,"usa","provo","marriage", 1234);
+                "123123", 1.2323f, 3434.4f, "usa", "provo", "marriage", 1234);
 
         ev2 = new Event("betterUsername", "1234_ID",
-                "Ababa", 1.2f, 34.4f,"usa","provo","birth", 1234);
+                "Ababa", 1.2f, 34.4f, "usa", "provo", "birth", 1234);
 
-        allNull = new Event(null,"anID",null,null,null,
-                null,null,null,null);
+        allNull = new Event(null, "anID", null, null, null,
+                null, null, null, null);
 
 
     }
@@ -58,38 +58,38 @@ class EventDaoTest {
 
     @Test
     void readPass() throws Exception {
-            //We want to make sure insert works
-            Event testA = null;
-            Event testB = null;
-            try {
-                //Let's get our connection and make a new DAO
-                Connection conn = db.openConnection();
-                EventDao eDao = new EventDao(conn);
-                //While insert returns a bool we can't use that to verify that our function actually worked
-                //only that it ran without causing an error
-                eDao.create(ev1);
-                eDao.create(ev2);
-                System.out.println("output");
-                db.closeConnection(true);
-                //So lets use a find method to get the event that we just put in back out
-                conn = db.openConnection();
-                eDao.setConn(conn);
-                testA = eDao.read(ev1.getEventID());
-                testB = eDao.read(ev2.getEventID());
+        //We want to make sure insert works
+        Event testA = null;
+        Event testB = null;
+        try {
+            //Let's get our connection and make a new DAO
+            Connection conn = db.openConnection();
+            EventDao eDao = new EventDao(conn);
+            //While insert returns a bool we can't use that to verify that our function actually worked
+            //only that it ran without causing an error
+            eDao.create(ev1);
+            eDao.create(ev2);
+            System.out.println("output");
+            db.closeConnection(true);
+            //So lets use a find method to get the event that we just put in back out
+            conn = db.openConnection();
+            eDao.setConn(conn);
+            testA = eDao.read(ev1.getEventID());
+            testB = eDao.read(ev2.getEventID());
 
-                db.closeConnection(true);
-            } catch (DataAccessException e) {
-                db.closeConnection(false);
-            }
-            //First lets see if our find found anything at all. If it did then we know that if nothing
-            //else something was put into our database, since we cleared it in the beginning
-            assertNotNull(testA);
-            assertNotNull(testB);
-            //Now lets make sure that what we put in is exactly the same as what we got out. If this
-            //passes then we know that our insert did put something in, and that it didn't change the
-            //data in any way
-            assertEquals(testA, ev1);
-            assertEquals(testB, ev2);
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        //First lets see if our find found anything at all. If it did then we know that if nothing
+        //else something was put into our database, since we cleared it in the beginning
+        assertNotNull(testA);
+        assertNotNull(testB);
+        //Now lets make sure that what we put in is exactly the same as what we got out. If this
+        //passes then we know that our insert did put something in, and that it didn't change the
+        //data in any way
+        assertEquals(testA, ev1);
+        assertEquals(testB, ev2);
     }
 
     @Test
@@ -107,8 +107,7 @@ class EventDaoTest {
             assertNull(event2);
             assertNull(ev3);
             db.closeConnection(true);
-        }
-        catch (DataAccessException e) {
+        } catch (DataAccessException e) {
             db.closeConnection(false);
             System.out.println("DB issue with reading and failing.");
         }
@@ -121,7 +120,7 @@ class EventDaoTest {
     }
 
     @Test
-    void readAllFail() throws Exception{ //if the auth doesn't exist
+    void readAllFail() throws Exception { //if the auth doesn't exist
 
     }
 
@@ -208,45 +207,88 @@ class EventDaoTest {
 
     @Test
     void clearPass() throws Exception {
-            Boolean passes = true;
-            try {
-                Connection conn = db.openConnection();
-                EventDao eDao = new EventDao(conn);
+        Boolean passes = true;
+        try {
+            Connection conn = db.openConnection();
+            EventDao eDao = new EventDao(conn);
 //          Add 2 persons to DB
-                eDao.create(ev1);
-                eDao.create(ev2);
-                db.closeConnection(true);
-                System.out.println("conn closed");
+            eDao.create(ev1);
+            eDao.create(ev2);
+            db.closeConnection(true);
+            System.out.println("conn closed");
 //
 //            //Reopen the connection
-                eDao.setConn(db.openConnection());
-                //Now make sure we can find them both, they will throw errors if not done right.
-                eDao.read(ev1.getEventID());
-                eDao.read(ev2.getEventID());
+            eDao.setConn(db.openConnection());
+            //Now make sure we can find them both, they will throw errors if not done right.
+            eDao.read(ev1.getEventID());
+            eDao.read(ev2.getEventID());
 
-                //now clear it.
-                eDao.clear();
+            //now clear it.
+            eDao.clear();
 
-                db.closeConnection(true);
-            } catch (DataAccessException e) {
-                //If we catch an exception we will end up in here, where we can change our boolean to
-                //false to show that our function failed to perform correctly
-                passes = false;
-                db.closeConnection(false);
-            }
-            //Now let's make sure it is empty, by catching an error on find.
-            try {
-                Connection conn = db.openConnection();
-                EventDao eDao = new EventDao(conn);
-                //let's try to read things that don't exist that we previously retrieved.
-                Event diffEvent = eDao.read(ev1.getEventID());
-                //If it reads it as a nonnull, it doesn't pass.
-                assertNull(diffEvent);
-                db.closeConnection(true);
-            }
-            catch (DataAccessException e) {
-                db.closeConnection(false);
-            }
-            assertTrue(passes);
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            //If we catch an exception we will end up in here, where we can change our boolean to
+            //false to show that our function failed to perform correctly
+            passes = false;
+            db.closeConnection(false);
+        }
+        //Now let's make sure it is empty, by catching an error on find.
+        try {
+            Connection conn = db.openConnection();
+            EventDao eDao = new EventDao(conn);
+            //let's try to read things that don't exist that we previously retrieved.
+            Event diffEvent = eDao.read(ev1.getEventID());
+            //If it reads it as a nonnull, it doesn't pass.
+            assertNull(diffEvent);
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        assertTrue(passes);
     }
+
+    @Test
+    void deleteWhereAssociatedUsernamePass() throws Exception {
+        //We want to make sure insert works
+        Event compareTest = null;
+        Event compareTest2 = null;
+        try {
+            //Let's get our connection and make a new DAO
+            Connection conn = db.openConnection();
+            EventDao eDao = new EventDao(conn);
+            //While insert returns a bool we can't use that to verify that our function actually worked
+            //only that it ran without causing an error
+            eDao.create(ev1);
+            eDao.create(ev2);
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            eDao.setConn(conn);
+            assertNotNull(eDao.read(ev1.getEventID())); //making sure it inserted
+            assertNotNull(eDao.read(ev2.getEventID())); //making sure it inserted
+            eDao.deleteWhereAssociatedUsername(ev1.getAssociatedUsername());
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            eDao.setConn(conn);
+            //System.out.println("output");
+            //So lets use a find method to get the event that we just put in back out
+            compareTest = eDao.read(ev1.getEventID());
+            compareTest2 = eDao.read(ev2.getEventID());
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        //First lets see if our find found anything at all. If it did then we know that if nothing
+        //else something was put into our database, since we cleared it in the beginning
+        assertNull(compareTest);
+        assertNotNull(compareTest2);
+        //Now lets make sure that what we put in is exactly the same as what we got out. If this
+        //passes then we know that our insert did put something in, and that it didn't change the
+        //data in any way
+        //assertNotEquals(ev1, compareTest);
+        assertEquals(ev2, compareTest2);
+    }
+
 }

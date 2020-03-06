@@ -1,8 +1,13 @@
 package services;
 
 
+import daos.*;
 import models.AuthToken;
+import models.Person;
+import results.ErrorMessage;
+import results.PersonRes;
 import results.Response;
+import results.SuccessMessage;
 
 /**
  * Person request Service.
@@ -23,11 +28,41 @@ public class PersonService {
      * @param personID  the ID of the person the user wants to get info for
      * @return returns an error response object or a personRes object.
      */
-    public Response serve(AuthToken authToken, String personID) {
+    public Response serve(String authToken, String personID) throws DataAccessException {
 
+        Database db = new Database();
+        try {
+            db.openConnection();
+            AuthTokenDao authTokenDao = new AuthTokenDao(db.getConnection());
 
+            //check to make sure auth is valid
+            AuthToken auth = authTokenDao.read(authToken);
+            if (auth == null)
+            {
+                return new ErrorMessage("Invalid auth token.");
+            }
 
+            //check to make sure person id exists
+            PersonDao personDao = new PersonDao(db.getConnection());
+            Person person = personDao.read(personID);
+            if (person == null)
+            {
+                return new ErrorMessage("Invalid personID parameter");
+            }
 
-        return null;
+            //we know the person exists and the auth is correct, need to make
+            //sure it belongs to this user.
+            if ( !(person.getAssociatedUsername().equals(auth.getUserName())) )
+            {
+                return new ErrorMessage("Requested person does not belong to this user");
+            }
+
+            db.closeConnection(true);
+            return new PersonRes(person);
+        }
+        catch (Exception ex) {
+            db.closeConnection(false);
+            return new ErrorMessage("Internal server error.");
+        }
     }
 }
