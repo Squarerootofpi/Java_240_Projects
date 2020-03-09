@@ -12,6 +12,7 @@ import requests.Login;
 import requests.Register;
 import results.ErrorMessage;
 import results.GoodLogin;
+import results.PersonRes;
 import results.Response;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -53,7 +54,7 @@ class LoadServiceTest {
         //db.closeConnection(true);
 
         aUser = new User("joseph", "steed",
-                "squar", "3@gmail.com", "pi", 'm', "1");
+                "u4", "3@gmail.com", "pi", 'm', "1");
         bUser = new User("james", "dasher", "betterUsername", "g@gmail.com",
                 "jo", 'm', "2");
         person = new Person("u4", "123_ID",
@@ -135,15 +136,22 @@ class LoadServiceTest {
             loadService.serve(fullLoad);
             //Test if can register, shouldn't be able to.
             r = registerService.serve(regRequest1);
-            assertEquals(r.getClass(), GoodLogin.class);
+            assertEquals(r.getClass(), ErrorMessage.class);
 
             //Test if can login. Should be able to.
             r = loginService.serve(login1);
             assertEquals(r.getClass(), GoodLogin.class);
             String auth = ((GoodLogin) r).getAuthToken();
 
+            //PersonService personService = new PersonService();
+            //PersonRes comparePerson1 = personService.serve(auth,person.getPersonID());
+            PersonService personService = new PersonService();
+            Response person1 = personService.serve(auth,person.getPersonID());
 
-
+            assertEquals(person1.getClass(), PersonRes.class);
+            PersonRes eR = ((PersonRes) person1);
+            Person comparePerson = new Person(eR.getAssociatedUsername(),eR.getPersonID(), eR.getFirstName(), eR.getLastName(), eR.getGender());
+            assertEquals(comparePerson, person);
         }
         catch (Exception ex) {
             ex.printStackTrace();
