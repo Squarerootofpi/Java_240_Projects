@@ -130,6 +130,8 @@ public class UserDao implements IDao {
 
         /**
          * {@inheritDoc}
+         *
+         * NOT IMPLEMENTED!! SO NO TESTING DONE.
          */
         @Override
         public boolean delete (String id){

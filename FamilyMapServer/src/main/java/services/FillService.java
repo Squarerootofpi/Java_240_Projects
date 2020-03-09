@@ -66,7 +66,8 @@ public class FillService {
             User user = userDao.read(userName);
             if (user == null || generations < 1)
             {
-                return new ErrorMessage("Invalid username or generations parameter");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid username or generations parameter, error.");
             }
 
             String userPersonID = user.getPersonID();
@@ -83,9 +84,11 @@ public class FillService {
             db.openConnection();
             //now add them back to the database
             personDao.setConn(db.getConnection());
-            personDao.create(userPerson);
+            //personDao.create(userPerson);
             //Now fill it!!!!
-            int numPersons = (int) Math.pow(2.0,generations) - 2;
+            //int i = (int)Math.pow(2.0D, (b + 1)) - 1;
+            //int j = i * 2;
+            int numPersons = (int) Math.pow(2.0,generations + 1) - 1;
             int numEvents = numPersons * 3 + 1;
 
             File fnames = new File("FoldersAndSources/json/fnames.json");
@@ -112,7 +115,7 @@ public class FillService {
 
             //Now, generate random fill stuff.
             this.fill(possFNames, possMNames, possSNames, possLocations,
-                    db.getConnection(), userName, generations
+                    db.getConnection(), userPerson, generations
                     );
 
 
@@ -123,23 +126,25 @@ public class FillService {
         }
         catch (Exception ex) {
             db.closeConnection(false);
-            return new ErrorMessage("Failed clearing tables");
+            System.out.println(ex.toString());
+            ex.printStackTrace();
+            return new ErrorMessage("Failed clearing tables, error.");
         }
     }
 
     private void fill(NameStrings femaleNames, NameStrings maleNames,
                  NameStrings surnames, MultiLocationsObject locations,
-                 Connection conn, String userName, int generations)
+                 Connection conn, Person rootPerson, int generations)
             throws DataAccessException
     {
 
-        UserDao userDao = new UserDao(conn);
-        User rootUser = userDao.read(userName);
+        //UserDao userDao = new UserDao(conn);
+        //User rootUser = userDao.read(userName);
 
         PersonDao personDao = new PersonDao(conn);
-        Person rootPerson = personDao.read(rootUser.getPersonID());
+        //Person rootPerson = personDao.read(rootUser.getPersonID());
 
-        Event userBirth = new Event(userName,UUID.randomUUID().toString(),
+        Event userBirth = new Event(rootPerson.getAssociatedUsername(),UUID.randomUUID().toString(),
                 rootPerson.getPersonID(),12.423f,52.24345f,
                 "USA",
                 "AF",
@@ -157,7 +162,7 @@ public class FillService {
 
 
         fillHelper(femaleNames,maleNames,surnames,locations,personDao,eventDao,
-                rootPerson, generations - 1, USER_BIRTH_YEAR
+                rootPerson, generations, USER_BIRTH_YEAR
         );
 
     }
@@ -174,6 +179,7 @@ public class FillService {
             throws DataAccessException
     {
         if (generations < 1) {
+            personDao.create(person);
             return;
         }
         
@@ -188,9 +194,9 @@ public class FillService {
         person.setFatherID(dad.getPersonID());
 
         //Now update the database respectively.
-        personDao.update(person);
-        personDao.create(mom);
-        personDao.create(dad);
+        personDao.create(person);
+        //personDao.create(mom);
+        //personDao.create(dad);
 
         //Grab locations to use for the 5 events
         LocationObject momBirthLoc = getRandLocation(locations);

@@ -1,5 +1,6 @@
 package daos;
 
+import models.AuthToken;
 import models.Event;
 import models.Person;
 import models.User;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,6 +17,9 @@ class EventDaoTest {
     private Database db;
     private Event ev1;
     private Event ev2;
+    private Event ev3;
+    private Event ev4;
+
     private Event allNull;
 
     @BeforeEach
@@ -22,6 +27,11 @@ class EventDaoTest {
         //here we can set up any classes or variables we will need for the rest of our tests
         //lets create a new database
         db = new Database();
+        db.clearTable("users"); //Clear table creates its own connection and closes it.
+        db.clearTable("persons"); //Clear table creates its own connection and closes it.
+        db.clearTable("events"); //Clear table creates its own connection and closes it.
+        db.clearTable("authTokens"); //Clear table creates its own connection and closes it.
+
 //        db.openConnection();
 //        db.clearTable("events"); //Clear table creates its own connection and closes it.
 //        db.closeConnection(true);
@@ -30,7 +40,11 @@ class EventDaoTest {
                 "123123", 1.2323f, 3434.4f, "usa", "provo", "marriage", 1234);
 
         ev2 = new Event("betterUsername", "1234_ID",
-                "Ababa", 1.2f, 34.4f, "usa", "provo", "birth", 1234);
+                "Ababa", 1.2f, 34.4f, "usa", "provo", "birth", 3321);
+        ev3 = new Event("u4", "12345_ID",
+                "Ababa", 1.2f, 34.4f, "usa", "provo", "death", 2342);
+        ev4 = new Event("u4", "123456_ID",
+                "Ababa", 1.2f, 34.4f, "usa", "provo", "christening", 3322);
 
         allNull = new Event(null, "anID", null, null, null,
                 null, null, null, null);
@@ -43,10 +57,19 @@ class EventDaoTest {
     public void tearDown() throws Exception {
         //here we can get rid of anything from our tests we don't want to affect the rest of our program
         //lets clear the tables so that any data we entered for testing doesn't linger in our files
+        db.clearTable("users"); //Clear table creates its own connection and closes it.
+        db.clearTable("persons"); //Clear table creates its own connection and closes it.
         db.clearTable("events"); //Clear table creates its own connection and closes it.
+        db.clearTable("authTokens"); //Clear table creates its own connection and closes it.
+
+
         System.out.println("in teardown");
     }
 
+    /**
+     * NO UPDATE IMPLEMENTED, SO NO TESTS TO BE DONE.
+     */
+    /*
     @Test
     void updatePass() {
 
@@ -55,6 +78,7 @@ class EventDaoTest {
     @Test
     void updateFail() {
     }
+    */
 
     @Test
     void readPass() throws Exception {
@@ -115,12 +139,86 @@ class EventDaoTest {
     }
 
     @Test
-    void readAllPass() throws Exception { //if the auth doesn't exist
+    void readAllWhereAssociatedUsernamePass() throws Exception {
+        try {
+            db.openConnection();
+
+//        AuthTokenDao authTokenDao = new AuthTokenDao(db.getConnection());
+//        AuthToken a1 = new AuthToken("123414fsd", ev1.getAssociatedUsername(),
+//                "123123");
+//        AuthToken a2 = new AuthToken("theauth", ev1.getAssociatedUsername(),
+//                "Ababa");
+//        AuthToken allNull = new AuthToken(null, null, null);
+//
+//        authTokenDao.create(a1);
+//        authTokenDao.create(a2);
+//
+//
+            EventDao eDao = new EventDao(db.getConnection());
+            eDao.create(ev2);
+            eDao.create(ev1);
+            eDao.create(ev3);
+            eDao.create(ev4);
+
+            db.closeConnection(true);
+
+            db.openConnection();
+            eDao.setConn(db.getConnection());
+
+            Event[] dualEventsA = eDao.readAllWhereAssociatedUsername(ev4.getAssociatedUsername());
+            Event[] dualEventsB = eDao.readAllWhereAssociatedUsername(ev3.getAssociatedUsername());
+            //make sure these both return 2 events
+            assertEquals(2, dualEventsA.length);
+            assertEquals(dualEventsA.length, dualEventsB.length);
+
+            Event[] singleEventA = eDao.readAllWhereAssociatedUsername(ev1.getAssociatedUsername());
+            Event[] singleEventB = eDao.readAllWhereAssociatedUsername(ev2.getAssociatedUsername());
+
+            assertEquals(1, singleEventA.length);
+            assertEquals(singleEventA.length,singleEventB.length);
+            assertNotEquals(singleEventA,singleEventB);
+
+            db.closeConnection(true);
+        }
+        catch (DataAccessException ex) {
+            db.closeConnection(false);
+
+            System.out.println(ex.toString());
+            ex.printStackTrace();
+        }
 
     }
 
     @Test
-    void readAllFail() throws Exception { //if the auth doesn't exist
+    void readAllWhereAssociatedUsernameFail() throws Exception { //if the auth doesn't exist
+        try {
+            db.openConnection();
+
+//
+            EventDao eDao = new EventDao(db.getConnection());
+            eDao.create(ev2);
+            eDao.create(ev1);
+            eDao.create(ev3);
+            eDao.create(ev4);
+
+            db.closeConnection(true);
+
+            db.openConnection();
+            eDao.setConn(db.getConnection());
+
+
+            Event[] events = eDao.readAllWhereAssociatedUsername("Thisisnotausername");
+
+            assertEquals(0, events.length);
+
+            db.closeConnection(true);
+        }
+        catch (DataAccessException ex) {
+            db.closeConnection(false);
+
+            System.out.println(ex.toString());
+            ex.printStackTrace();
+        }
 
     }
 
@@ -197,13 +295,17 @@ class EventDaoTest {
         assertNull(compareTest);
     }
 
-    @Test
+    /**
+     * Not implemented, so NOT TESTING CURRENTLY.
+     */
+    /*@Test
     void deletePass() {
     }
 
     @Test
     void deleteFail() {
     }
+*/
 
     @Test
     void clearPass() throws Exception {
@@ -291,4 +393,48 @@ class EventDaoTest {
         assertEquals(ev2, compareTest2);
     }
 
+    @Test
+    void deleteWhereAssociatedUsernameFail() throws Exception {
+        //We want to make sure insert works
+        Event compareTest = null;
+        Event compareTest2 = null;
+        try {
+            //Let's get our connection and make a new DAO
+            Connection conn = db.openConnection();
+            EventDao eDao = new EventDao(conn);
+            //While insert returns a bool we can't use that to verify that our function actually worked
+            //only that it ran without causing an error
+            eDao.create(ev1);
+            eDao.create(ev2);
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            eDao.setConn(conn);
+            assertNotNull(eDao.read(ev1.getEventID())); //making sure it inserted
+            assertNotNull(eDao.read(ev2.getEventID())); //making sure it inserted
+            //not a username
+            eDao.deleteWhereAssociatedUsername("nonononkhjghhgddfhgj");
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            eDao.setConn(conn);
+            //System.out.println("output");
+            //So lets use a find method to get the event that we just put in back out
+            compareTest = eDao.read(ev1.getEventID());
+            compareTest2 = eDao.read(ev2.getEventID());
+
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        //First lets see if our find found anything at all. If it did then we know that if nothing
+        //else something was put into our database, since we cleared it in the beginning
+        assertNotNull(compareTest);
+        assertNotNull(compareTest2);
+        //Now lets make sure that what we put in is exactly the same as what we got out. If this
+        //passes then we know that our insert did put something in, and that it didn't change the
+        //data in any way
+        //assertNotEquals(ev1, compareTest);
+
+    }
 }

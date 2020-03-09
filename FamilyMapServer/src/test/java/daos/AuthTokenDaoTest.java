@@ -21,6 +21,8 @@ class AuthTokenDaoTest {
         //here we can set up any classes or variables we will need for the rest of our tests
         //lets create a new database
         db = new Database();
+        db.clearTable("authTokens"); //Clear table creates its own connection and closes it.
+
 //        db.openConnection();
 //        db.clearTable("events"); //Clear table creates its own connection and closes it.
 //        db.closeConnection(true);
@@ -43,9 +45,14 @@ class AuthTokenDaoTest {
         System.out.println("in teardown");
     }
 
-    @Test
+    /**
+     * NOT IMPLEMENTED, SO NO TESTS MADE FOR #UPDATE AS OF YET
+     */
+    /*@Test
     void update() {
+
     }
+    */
 
     @Test
     void readPass() throws Exception {

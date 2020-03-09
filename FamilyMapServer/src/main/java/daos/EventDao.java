@@ -4,6 +4,7 @@ import models.Event;
 import models.Person;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * {@inheritDoc}
@@ -26,6 +27,8 @@ public class EventDao implements IDao {
 
     /**
      * Event update function for the database: updates with a given model.
+     *
+     * NOT IMPLEMENTED, SO NO TESTS MADE FOR EVENTDAO AS OF CURRENTLY.
      *
      * @param event the model to identify the row for the Dao to attempt to update
      * @return says whether it updated properly
@@ -86,10 +89,38 @@ public class EventDao implements IDao {
     /**
      * For getting all events
      */
-    public Event[] readAll() {
+    public Event[] readAllWhereAssociatedUsername(String userName) throws DataAccessException {
+        Event event;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM events WHERE associatedUsername = ?;";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, userName);
+            rs = stmt.executeQuery();
 
+            ArrayList<Event> events = new ArrayList<Event>();
+            while (rs.next()) {
+                event = new Event(rs.getString("associatedUsername"), rs.getString("eventID"),
+                        rs.getString("personID"),rs.getFloat("latitude"),
+                        rs.getFloat("longitude"),rs.getString("country"),
+                        rs.getString("city"),rs.getString("eventType"),
+                        rs.getInt("year"));
+                events.add(event);
+            }
 
-        return null;
+            return events.toArray(new Event[events.size()]);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new DataAccessException("Error encountered while finding events");
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
     }
 
     /**
@@ -129,6 +160,7 @@ public class EventDao implements IDao {
 
             stmt.executeUpdate();
         } catch (SQLException e) {
+            System.out.println(e.toString());
             throw new DataAccessException("Error encountered while inserting into the database");
         }
         return true;

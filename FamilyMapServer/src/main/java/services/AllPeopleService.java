@@ -38,7 +38,8 @@ public class AllPeopleService {
             AuthToken auth = authTokenDao.read(authToken);
             if (auth == null)
             {
-                return new ErrorMessage("Invalid auth token.");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid auth token, error.");
             }
 
             PersonDao personDao = new PersonDao(db.getConnection());

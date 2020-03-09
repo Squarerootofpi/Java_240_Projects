@@ -7,6 +7,7 @@ import requests.Load;
 import requests.Register;
 import results.ErrorMessage;
 import results.Response;
+import services.ClearService;
 import services.LoadService;
 import services.RegisterService;
 
@@ -29,6 +30,8 @@ public class LoadHandler extends BaseHandler {
 
                 LoadService loadService = new LoadService();
 
+                ClearService clearService = new ClearService();
+                clearService.serve();
                 InputStream reqBody = exchange.getRequestBody();
                 String req = readString(reqBody);
                 Load loadRequest = gson.fromJson(req, Load.class);
@@ -38,8 +41,15 @@ public class LoadHandler extends BaseHandler {
 
                 // Start sending the HTTP response to the client, starting with
                 // the status code and any defined headers.
-                exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
-                        resJson.length());
+                if(isErrorResponse(res))
+                {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST,
+                            0);
+                }
+                else {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
+                            0);
+                }
                 OutputStream respBody = exchange.getResponseBody();
                 writeString(resJson, respBody);
                 exchange.getResponseBody().close();
@@ -58,8 +68,11 @@ public class LoadHandler extends BaseHandler {
 
             // Start sending the HTTP response to the client, starting with
             // the status code and any defined headers.
-            exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
-                    resJson.length());
+
+            exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST,
+                    0);
+
+
             OutputStream respBody = exchange.getResponseBody();
             writeString(resJson, respBody);
             exchange.getResponseBody().close();

@@ -27,6 +27,10 @@ public class AllPeople extends Response {
         return data;
     }
 
+    public int size() {
+        return data.length;
+    }
+
     public void setPeople(Person[] people) {
         this.data = people;
     }

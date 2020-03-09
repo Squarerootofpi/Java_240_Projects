@@ -43,8 +43,15 @@ public class RegisterHandler extends BaseHandler {
 
                 // Start sending the HTTP response to the client, starting with
                 // the status code and any defined headers.
-                exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
-                        resJson.length());
+                if(isErrorResponse(res))
+                {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST,
+                            0);
+                }
+                else {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
+                            0);
+                }
                 OutputStream respBody = exchange.getResponseBody();
                 writeString(resJson, respBody);
                 exchange.getResponseBody().close();
@@ -63,7 +70,7 @@ public class RegisterHandler extends BaseHandler {
 
             // Start sending the HTTP response to the client, starting with
             // the status code and any defined headers.
-            exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
+            exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST,
                     resJson.length());
             OutputStream respBody = exchange.getResponseBody();
             writeString(resJson, respBody);

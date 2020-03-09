@@ -62,7 +62,7 @@ public class RegisterService {
             ) {
                 System.out.println(userToAdd.getGender());
                 System.out.println(!userToAdd.getGender().equals('m'));
-                return new ErrorMessage("Request property missing or has invalid value.");
+                return new ErrorMessage("Request property missing or has invalid value, error.");
             }
 
             //make sure not already a username
@@ -70,7 +70,7 @@ public class RegisterService {
             if (!(userRead == null))
             {
                 db.closeConnection(false);
-                return new ErrorMessage("Username already taken by another user.");
+                return new ErrorMessage("Username already taken by another user, error.");
             }
 
             //It's fine to create it, so create user, and give authtoken
@@ -109,7 +109,7 @@ public class RegisterService {
         {
             db.closeConnection(false);
             System.out.println(ex.toString());
-            return new ErrorMessage("Request property missing or has invalid value.");
+            return new ErrorMessage("Request property missing or has invalid value, error.");
         }
     }
 }

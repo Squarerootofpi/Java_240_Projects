@@ -44,7 +44,8 @@ public class LoginService {
                             //parameters should not be empty as well.
                             || login.getUserName().equals("") || login.getPassword().equals("")
             ) {
-                return new ErrorMessage("Request property missing or has invalid value");
+                db.closeConnection(false);
+                return new ErrorMessage("Request property missing or has invalid value, error");
             }
 
             //make sure it is a username
@@ -52,12 +53,12 @@ public class LoginService {
             if (userRead == null)
             {
                 db.closeConnection(false);
-                return new ErrorMessage("Request property missing or has invalid value");
+                return new ErrorMessage("Request property missing or has invalid value, error");
             }
             if (!userRead.getPassword().equals(login.getPassword()))
             {
                 db.closeConnection(false);
-                return new ErrorMessage("Request property missing or has invalid value");
+                return new ErrorMessage("Request property missing or has invalid value, error");
             }
 
             //It's fine to create it, so create user, and give authtoken
@@ -71,7 +72,7 @@ public class LoginService {
 
             //add them to the authtoken table and give them that back.
             AuthToken authToken = new AuthToken(UUID.randomUUID().toString(),userRead.getUserName(),userRead.getPersonID());
-            AuthTokenDao authTokenDao = new AuthTokenDao(conn);
+            AuthTokenDao authTokenDao = new AuthTokenDao(db.getConnection());
             authTokenDao.create(authToken);
 
 

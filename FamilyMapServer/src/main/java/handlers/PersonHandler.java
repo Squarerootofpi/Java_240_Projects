@@ -46,8 +46,15 @@ public class PersonHandler extends BaseHandler {
                 System.out.println(resJson);
                 // Start sending the HTTP response to the client, starting with
                 // the status code and any defined headers.
-                exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
-                        resJson.length());
+                if(isErrorResponse(res))
+                {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST,
+                            0);
+                }
+                else {
+                    exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK,
+                            0);
+                }
                 writeString(resJson, respBody);
                 exchange.getResponseBody().close();
             }

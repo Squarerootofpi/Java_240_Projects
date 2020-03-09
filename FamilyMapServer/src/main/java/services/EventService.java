@@ -37,7 +37,8 @@ public class EventService {
             AuthToken auth = authTokenDao.read(authToken);
             if (auth == null)
             {
-                return new ErrorMessage("Invalid auth token.");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid auth token, error.");
             }
 
             //check to make sure person id exists
@@ -45,14 +46,16 @@ public class EventService {
             Event event = eventDao.read(eventID);
             if (event == null)
             {
-                return new ErrorMessage("Invalid eventID parameter");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid eventID parameter, error.");
             }
 
             //we know the person exists and the auth is correct, need to make
             //sure it belongs to this user.
             if ( !(event.getAssociatedUsername().equals(auth.getUserName())) )
             {
-                return new ErrorMessage("Requested event does not belong to this user");
+                db.closeConnection(false);
+                return new ErrorMessage("Requested event does not belong to this user, error.");
             }
 
             db.closeConnection(true);

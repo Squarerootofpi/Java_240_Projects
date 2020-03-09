@@ -2,7 +2,6 @@ package daos;
 
 
 import models.AuthToken;
-import models.Event;
 
 import java.sql.*;
 
@@ -28,6 +27,8 @@ public class AuthTokenDao implements IDao {
 
     /**
      * AuthToken update function for the database: updates with a given model.
+     *
+     * NOT IMPLEMENTED OR USED: SO NO TESTS CONDUCTED. MAYBE FOR FUTURE USE.
      *
      * @param authToken the model to identify the row for the Dao to attempt to update
      * @return says whether it updated properly
@@ -61,7 +62,7 @@ public class AuthTokenDao implements IDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new DataAccessException("Error encountered while finding event");
+            throw new DataAccessException("Error encountered while finding authToken");
         } finally {
             if (rs != null) {
                 try {
@@ -119,6 +120,8 @@ public class AuthTokenDao implements IDao {
 
     /**
      * {@inheritDoc}
+     *
+     * NOT IMPLEMENTED, SO CURRENTLY NOT TESTED.
      */
     @Override
     public boolean delete(String id) {

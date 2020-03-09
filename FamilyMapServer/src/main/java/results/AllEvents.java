@@ -27,6 +27,10 @@ public class AllEvents extends Response {
         return data;
     }
 
+    public int size() {
+        return data.length;
+    }
+
     public void setEvents(Event[] events) {
         this.data = events;
     }

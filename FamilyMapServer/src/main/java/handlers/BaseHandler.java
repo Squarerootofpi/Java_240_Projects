@@ -2,6 +2,9 @@ package handlers;
 import java.io.*;
 import java.net.*;
 import com.sun.net.httpserver.*;
+import results.ErrorMessage;
+import results.Response;
+
 import java.io.IOException;
 
 public class BaseHandler implements HttpHandler {
@@ -17,6 +20,10 @@ public class BaseHandler implements HttpHandler {
         exchange.sendResponseHeaders(HttpURLConnection.HTTP_BAD_REQUEST, 0);
         exchange.getResponseBody().close();
     }
+
+    Boolean isErrorResponse(Response res) {
+    	return (res.getClass().equals(ErrorMessage.class));
+	}
 
     /**
      * The readString method shows how to read a String from an InputStream.

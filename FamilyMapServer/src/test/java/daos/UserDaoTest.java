@@ -50,9 +50,14 @@ class UserDaoTest {
         System.out.println("in teardown");
         //db.closeConnection(true);
     }
-    @Test
+
+    /**
+     * NOT IMPLEMENTED, SO NO UPDATE TESTED
+     */
+    /*@Test
     void update() {
     }
+    */
 
     @org.junit.jupiter.api.Test
     void readPass() throws Exception {
@@ -179,7 +184,6 @@ class UserDaoTest {
         assertNull(compareTest);
     }
 
-
     @org.junit.jupiter.api.Test
     void clearPass() throws Exception {
         Boolean passes = true;
@@ -223,7 +227,12 @@ class UserDaoTest {
         assertTrue(passes);
     }
 
-    @Test
+    /**
+     * NOT IMPLEMENTED, SO NOT TESTED.
+     */
+    /*@Test
     void delete() {
     }
+    */
+
 }

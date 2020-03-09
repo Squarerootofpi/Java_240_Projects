@@ -31,6 +31,9 @@ public class LoadService {
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
 
+        //Clear everything initially.
+        ClearService clearService = new ClearService();
+        clearService.serve();
 
         Database db = new Database();
         try {
@@ -66,7 +69,7 @@ public class LoadService {
         }
         catch (Exception ex) {
             db.closeConnection(false);
-            return new ErrorMessage("Failed clearing tables");
+            return new ErrorMessage("Failed clearing tables, error.");
         }
     }
 }

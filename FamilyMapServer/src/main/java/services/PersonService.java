@@ -39,7 +39,8 @@ public class PersonService {
             AuthToken auth = authTokenDao.read(authToken);
             if (auth == null)
             {
-                return new ErrorMessage("Invalid auth token.");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid auth token, error.");
             }
 
             //check to make sure person id exists
@@ -47,14 +48,16 @@ public class PersonService {
             Person person = personDao.read(personID);
             if (person == null)
             {
-                return new ErrorMessage("Invalid personID parameter");
+                db.closeConnection(false);
+                return new ErrorMessage("Invalid personID parameter, error.");
             }
 
             //we know the person exists and the auth is correct, need to make
             //sure it belongs to this user.
             if ( !(person.getAssociatedUsername().equals(auth.getUserName())) )
             {
-                return new ErrorMessage("Requested person does not belong to this user");
+                db.closeConnection(false);
+                return new ErrorMessage("Requested person does not belong to this user, error.");
             }
 
             db.closeConnection(true);

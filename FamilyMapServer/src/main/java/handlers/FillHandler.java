@@ -57,12 +57,12 @@ public class FillHandler extends BaseHandler {
                 }
                 else if (path.length == (1 + PATH_LENGTH)) {
                     res = fillService.serve(path[PATH_LENGTH],DEFAULT_GENERATIONS);
-                    valid = true;
+                    valid = (!isErrorResponse(res));
                 }
                 else //pathlength == 2 + PATH_LENGTH
                 {
                     res = fillService.serve(path[PATH_LENGTH],Integer.parseInt(path[PATH_LENGTH + 1]));
-                    valid = true;
+                    valid = (!isErrorResponse(res));;
                 }
 
                 //Now tojson it if it's valid.

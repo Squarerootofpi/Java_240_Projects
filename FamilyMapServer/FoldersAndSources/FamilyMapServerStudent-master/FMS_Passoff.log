@@ -1,35 +1,1889 @@
-[Wed Mar 04 23:20:05 MST 2020] - INFO passoff.ServerTest: 	Setting up Persistence Test...
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Proxy: 	Clear called
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Post without Request Body called
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Attempting to open connection to server
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Connection opened to server
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Setting request method to POST
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Request method set to POST
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Setting Do Output to true
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Do Output set to true
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Connecting to server
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Connected to server
-[Wed Mar 04 23:20:05 MST 2020] - INFO client.Client: 	Getting response code from server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Response code 200 returned
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Getting input stream from server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Reading input stream into a string
-[Wed Mar 04 23:20:09 MST 2020] - INFO passoff.ServerTest: 	Running Persistence Test...
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Proxy: 	Load called
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Post with Request Body called
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Attempting to open connection to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Connection opened to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Setting request method to POST
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Request method set to POST
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Setting Do Output to true
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Do Output set to true
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Connecting to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Connected to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Opening output stream to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Writing request to server output stream
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Request written to server output stream
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Closing output stream to server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Output stream to server closed
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Getting response code from server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Response code 200 returned
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Getting input stream from server
-[Wed Mar 04 23:20:09 MST 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Setting up Persistence Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Running Persistence Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Adding Auth token 364e0aef-b0d7-408c-a7f2-62979eb85e4a
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Auth token set to 364e0aef-b0d7-408c-a7f2-62979eb85e4a
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Adding Auth token 364e0aef-b0d7-408c-a7f2-62979eb85e4a
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Auth token set to 364e0aef-b0d7-408c-a7f2-62979eb85e4a
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Adding Auth token f00bc099-b1e4-42a7-8c92-8b48a7bd10c4
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Auth token set to f00bc099-b1e4-42a7-8c92-8b48a7bd10c4
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Adding Auth token f00bc099-b1e4-42a7-8c92-8b48a7bd10c4
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Auth token set to f00bc099-b1e4-42a7-8c92-8b48a7bd10c4
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Setting up File Handler Default Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Running File Handler Default Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	File called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Get without Auth Token called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Setting up Realistic Fill Death Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:40 MDT 2020] - INFO passoff.ServerTest: 	Running Realistic Fill Death Test...
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:40 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 56e168da-079e-448c-a7e1-4c7ed1a85925
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 56e168da-079e-448c-a7e1-4c7ed1a85925
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 56e168da-079e-448c-a7e1-4c7ed1a85925
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 56e168da-079e-448c-a7e1-4c7ed1a85925
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Login Invalid User Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Login Invalid User Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Load Valid Info Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Load Valid Info Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token bca208b7-1bed-4837-9dda-d4276716a84b
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to bca208b7-1bed-4837-9dda-d4276716a84b
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token bca208b7-1bed-4837-9dda-d4276716a84b
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to bca208b7-1bed-4837-9dda-d4276716a84b
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token e3385b8d-58c9-4e84-a201-90b5a2d1ecde
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to e3385b8d-58c9-4e84-a201-90b5a2d1ecde
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token e3385b8d-58c9-4e84-a201-90b5a2d1ecde
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to e3385b8d-58c9-4e84-a201-90b5a2d1ecde
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Valid Fill Relationships Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Valid Fill Relationships Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 19a988b8-fef7-4dc2-9670-456bdb8cdb25
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 19a988b8-fef7-4dc2-9670-456bdb8cdb25
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Events Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Events Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Clear Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Clear Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 84936479-0d19-4924-b607-cf0f6d0d2135
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 84936479-0d19-4924-b607-cf0f6d0d2135
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 84936479-0d19-4924-b607-cf0f6d0d2135
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 84936479-0d19-4924-b607-cf0f6d0d2135
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Event Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Event Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Event called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Realistic Fill Marriage Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Realistic Fill Marriage Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 8a294cfa-b6bb-4917-9bfb-26788b148c1a
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 8a294cfa-b6bb-4917-9bfb-26788b148c1a
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 8a294cfa-b6bb-4917-9bfb-26788b148c1a
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 8a294cfa-b6bb-4917-9bfb-26788b148c1a
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Person Wrong User Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Person Wrong User Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Person called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 76a23570-860e-4bdb-ad5f-e4be82a19076
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 76a23570-860e-4bdb-ad5f-e4be82a19076
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Person Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Person Bad Auth Token Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Person called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to bad auth
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Event Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Event Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Event called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 4c82e30a-3cef-40c5-b258-7be196180841
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 4c82e30a-3cef-40c5-b258-7be196180841
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Event called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Adding Auth token 4c82e30a-3cef-40c5-b258-7be196180841
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Auth token set to 4c82e30a-3cef-40c5-b258-7be196180841
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Fill 2 Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Fill 2 Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Fill called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Setting up Fill 4 Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO passoff.ServerTest: 	Running Fill 4 Valid Test...
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Proxy: 	Fill called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:41 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Fill 5 Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Fill 5 Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Fill called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Persons Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Persons Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token fbb24837-cc5c-440a-92a2-fc2b2a9f89aa
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to fbb24837-cc5c-440a-92a2-fc2b2a9f89aa
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Load Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Load Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Re-Register User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Re-Register User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Login Invalid Password Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Login Invalid Password Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Event Wrong User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Event Wrong User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Event called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token 62116fa2-2a33-48e8-9dbd-bba507cfa05c
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to 62116fa2-2a33-48e8-9dbd-bba507cfa05c
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Realistic Fill Birth Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Realistic Fill Birth Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token 288880dc-9e84-4de5-9d4f-501acf37d42e
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to 288880dc-9e84-4de5-9d4f-501acf37d42e
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token 288880dc-9e84-4de5-9d4f-501acf37d42e
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to 288880dc-9e84-4de5-9d4f-501acf37d42e
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Events Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Events Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token d886d2d6-d311-4a85-be04-4e95c9b7e46d
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to d886d2d6-d311-4a85-be04-4e95c9b7e46d
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Person Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Person Valid Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Person called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token bf088462-f90c-43e7-bca2-6486a9c66da8
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to bf088462-f90c-43e7-bca2-6486a9c66da8
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Register Valid New User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Register Valid New User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up File Handler 404 Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running File Handler 404 Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	File called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get without Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 404 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up File Handler Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running File Handler Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	File called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get without Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Persons Bad Auth Token Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Persons Bad Auth Token Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token bad auth
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to bad auth
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 400 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Fill Does Not Affect Other Users Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Fill Does Not Affect Other Users Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Load called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Fill called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Persons called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token 0896247e-1d84-49b6-976e-6d3344a6b168
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to 0896247e-1d84-49b6-976e-6d3344a6b168
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Events called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Get with Auth Token called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to GET
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to false
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Adding Auth token 0896247e-1d84-49b6-976e-6d3344a6b168
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Auth token set to 0896247e-1d84-49b6-976e-6d3344a6b168
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Setting up Login Valid User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Clear called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post without Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO passoff.ServerTest: 	Running Login Valid User Test...
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Register called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Proxy: 	Login called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Post with Request Body called
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Attempting to open connection to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connection opened to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting request method to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request method set to POST
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Setting Do Output to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Do Output set to true
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connecting to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Connected to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Opening output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Writing request to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Request written to server output stream
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Closing output stream to server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Output stream to server closed
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting response code from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Response code 200 returned
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Getting input stream from server
+[Mon Mar 09 15:19:42 MDT 2020] - INFO client.Client: 	Reading input stream into a string

@@ -28,6 +28,8 @@ public class PersonDao implements IDao {
     /**
      * Person update function for the database: updates with a given model.
      *
+     * NOT IMPLEMENTED, SO NOT BEING TESTED CURRENTLY
+     *
      * @param person the model to identify the row for the Dao to attempt to update
      * @return says whether it updated properly
      */

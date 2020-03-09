@@ -20,6 +20,7 @@ import static org.junit.jupiter.api.Test.*;
 class PersonDaoTest {
     private Database db;
     private Person person;
+    private Person person2;
     private Person nonNullPerson;
     private Person nullValuesExceptID;
 
@@ -38,6 +39,11 @@ class PersonDaoTest {
         nonNullPerson.setSpouseID("1234");
         nonNullPerson.setMotherID("5678");
         nonNullPerson.setFatherID("9012");
+
+        person2 = new Person("crap_username", "1234_ID",
+                "james", "steed", 'm');
+
+
 
         nullValuesExceptID = new Person("squar", "678_ID",
                 "joseph", "steed", 'm');
@@ -58,7 +64,11 @@ class PersonDaoTest {
         //db.closeConnection(true);
     }
 
-    @org.junit.jupiter.api.Test
+    /**
+     * NOT IMPLEMENTED, SO CURRENT UPDATE PASS NOT ACTIVATED
+     * @throws Exception
+     */
+    /*@org.junit.jupiter.api.Test
     void updatePass() throws Exception {
 
     }
@@ -66,6 +76,7 @@ class PersonDaoTest {
     @org.junit.jupiter.api.Test
     void updateFail() {
     }
+    */
 
     @org.junit.jupiter.api.Test
     void readPass() throws Exception {
@@ -239,8 +250,10 @@ class PersonDaoTest {
         assertTrue(passes);
     }
 
-
-    @org.junit.jupiter.api.Test
+    /**
+     * NOT IMPLEMENTED, SO DELETE NOT BEING TESTED CURRENTLY.
+     */
+    /*@org.junit.jupiter.api.Test
     void deletePass() {
 
     }
@@ -249,9 +262,9 @@ class PersonDaoTest {
     void deleteFail() {
 
     }
-
+*/
     @Test
-    void deleteWhereAssociatedUsername() throws Exception {
+    void deleteWhereAssociatedUsernamePass() throws Exception {
         //We want to make sure insert works
         Person compareTest = null;
         Person compareTest2 = null;
@@ -291,6 +304,120 @@ class PersonDaoTest {
         //data in any way
         //assertNotEquals(person, compareTest);
         assertEquals(nonNullPerson, compareTest2);
+    }
+
+    @Test
+    void deleteWhereAssociatedUsernameFail() throws Exception {
+        //We want to make sure insert works
+        Person compareTest = null;
+        Person compareTest2 = null;
+        try {
+            //Let's get our connection and make a new DAO
+            Connection conn = db.openConnection();
+            PersonDao pDao = new PersonDao(conn);
+            //While insert returns a bool we can't use that to verify that our function actually worked
+            //only that it ran without causing an error
+            pDao.create(person);
+            pDao.create(nonNullPerson);
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            pDao.setConn(conn);
+            assertNotNull(pDao.read(person.getPersonID())); //making sure it inserted
+            assertNotNull(pDao.read(nonNullPerson.getPersonID())); //making sure it inserted
+            pDao.deleteWhereAssociatedUsername("This is a fake I" +
+                    "d");
+            db.closeConnection(true);
+
+            conn = db.openConnection();
+            pDao.setConn(conn);
+            //System.out.println("output");
+            //So lets use a find method to get the event that we just put in back out
+            compareTest = pDao.read(person.getPersonID());
+            compareTest2 = pDao.read(nonNullPerson.getPersonID());
+            db.closeConnection(true);
+        } catch (DataAccessException e) {
+            db.closeConnection(false);
+        }
+        //First lets see if our find found anything at all. If it did then we know that if nothing
+        //else something was put into our database, since we cleared it in the beginning
+        assertNotNull(compareTest);
+        assertNotNull(compareTest2);
+        //Now lets make sure that what we put in is exactly the same as what we got out. If this
+        //passes then we know that our insert did put something in, and that it didn't change the
+        //data in any way
+        assertEquals(person, compareTest);
+        assertEquals(nonNullPerson, compareTest2);
+    }
+
+
+    @Test
+    void readAllWhereAssociatedUsernamePass() throws Exception {
+        try {
+            db.openConnection();
+
+            PersonDao pDao = new PersonDao(db.getConnection());
+            pDao.create(person);
+            pDao.create(person2);
+            pDao.create(nonNullPerson);
+
+            db.closeConnection(true);
+
+            db.openConnection();
+            pDao.setConn(db.getConnection());
+
+            //have same username
+            Person[] dualPersonsA = pDao.readAllWhereAssociatedUsername(person.getAssociatedUsername());
+            Person[] dualPersonsB = pDao.readAllWhereAssociatedUsername(person2.getAssociatedUsername());
+            //make sure these both return 2 events
+            assertEquals(2, dualPersonsA.length);
+            assertEquals(2, dualPersonsB.length);
+
+            Person[] singlePersonA = pDao.readAllWhereAssociatedUsername(nonNullPerson.getAssociatedUsername());
+
+            assertEquals(1, singlePersonA.length);
+
+            db.closeConnection(true);
+        }
+        catch (DataAccessException ex) {
+            db.closeConnection(false);
+
+            System.out.println(ex.toString());
+            ex.printStackTrace();
+        }
+
+    }
+
+    @Test
+    void readAllWhereAssociatedUsernameFail() throws Exception { //if the auth doesn't exist
+        try {
+            db.openConnection();
+
+//
+            PersonDao pDao = new PersonDao(db.getConnection());
+            pDao.create(person);
+            pDao.create(person2);
+            pDao.create(nonNullPerson);
+
+            db.closeConnection(true);
+
+            db.openConnection();
+            pDao.setConn(db.getConnection());
+
+
+            Person[] persons = pDao.readAllWhereAssociatedUsername("Thisisnotausername");
+
+            assertEquals(0, persons.length);
+
+            db.closeConnection(true);
+        }
+        catch (DataAccessException ex) {
+            db.closeConnection(false);
+
+            System.out.println(ex.toString());
+            ex.printStackTrace();
+        }
+
     }
 
 

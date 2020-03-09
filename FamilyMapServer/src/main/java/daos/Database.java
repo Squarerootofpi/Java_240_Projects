@@ -1,5 +1,6 @@
 package daos;
 
+import javax.xml.crypto.Data;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -28,6 +29,9 @@ public class Database {
     public Connection openConnection() throws DataAccessException {
         try {
 
+            if (!(conn == null)) {
+                throw new DataAccessException("You're an idiot. You tried to open the database a second time.");
+            }
             //The Structure for this Connection is driver:language:path
             //The path assumes you start in the root of your project unless given a non-relative path
             final String CONNECTION_URL = "jdbc:sqlite:familymap.db";
@@ -75,6 +79,10 @@ public class Database {
      */
     public void closeConnection(boolean commit) throws DataAccessException {
         try {
+            if (conn == null)
+            {
+                throw new DataAccessException("Attempted to close a connection which was null");
+            }
             if (commit) {
                 //This will commit the changes to the database
                 conn.commit();

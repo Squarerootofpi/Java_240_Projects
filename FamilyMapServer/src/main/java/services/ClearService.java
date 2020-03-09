@@ -5,6 +5,8 @@ import results.ErrorMessage;
 import results.Response;
 import results.SuccessMessage;
 
+import java.sql.Connection;
+
 /**
  * Clear All Service.
  * Only one public function, which handlers call when they have parsed
@@ -24,7 +26,7 @@ public class ClearService {
     public Response serve() throws DataAccessException {
         Database db = new Database();
         try {
-            db.openConnection();
+            Connection conn = db.openConnection();
             UserDao userDao = new UserDao(db.getConnection());
             PersonDao personDao = new PersonDao(db.getConnection());
             EventDao eventDao = new EventDao(db.getConnection());
@@ -39,7 +41,9 @@ public class ClearService {
         }
         catch (Exception ex) {
             db.closeConnection(false);
-            return new ErrorMessage("Failed clearing tables");
+            ex.printStackTrace();
+            System.out.println(ex.toString());
+            return new ErrorMessage("Failed clearing tables, error.");
         }
     }
 }
